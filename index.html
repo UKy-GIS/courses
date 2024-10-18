@@ -42,18 +42,69 @@
         }
 
         .instructor {
-            width:200px;
-            height:200px;
-            border-radius:50%;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: aliceblue;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .instructor-text {
+            font-size: 1.5rem;
+            /* font-weight: bold; */
+        }
+
+        .highlight {
+            background-color: #009bda;
+            color: white;
+            padding: 5px;
+            margin: 10px 0;
+            /* border-radius: 5px; */
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+
+        .course-image {
+            width: 80%;
+            height: auto;
+            border-radius: 50%;
             background-color: aliceblue;
             background-size: cover;
             background-position: center;
         }
 
         .two-column {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 10px;
+            display: flex;
+        }
+
+        .flex-column {
+            flex: 1;
+        }
+
+        .flex-spread {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .flex-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+
+        .flex-two-items {
+            display: flex;
+            height: 80px;
+            justify-content: flex-start;
+            align-items: center;
+            /* Vertical center alignment */
+            gap: 20px;
+            /* Space between items */
         }
     </style>
 </head>
@@ -64,55 +115,67 @@
         <div class="slides">
 
             <section data-pre-load data-background-image="images/background.jpg" data-background-opacity="0.5">
-                <h2 class="r-fit-text">Geoawareness<br>activities</h2>
-                <!-- <h2>Welcome</h2> -->
-                <!-- <div class="ll" style="opacity:0.5;font-size:0.8rem">
-                    Background: current webcam of Mammoth Cave NP
-                </div> -->
+                <h2 class="r-fit-text">Be a<br>Geographer</h2>
                 <div class='lr'>2024</div>
             </section>
             <section data-pre-load data-background-image="images/background.jpg" data-background-opacity="0.5">
                 <div style="padding:30px;background-color:#ffffff77;border-radius:2rem;">
                     <a href="https://geography.as.uky.edu/"><img width="100%" src="images/logo-uk-geo.png" /></a>
                 </div>
-
-
-
             </section>
 
-            <section align='left' data-background-image='images/background.jpg' data-background-opacity="0.3">
-                <h3>GEO 109</h3>
-                <div class="two-column">
-                    <div class="two-column">
-                        <div class="instructor" style="background-image: url('https://geography.as.uky.edu/sites/default/files/styles/fwrd_directory_photo/public/pictures/picture-2600-1520268697.jpg');">
-                        </div>
-                        <div>
-                            Tad and company
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h4>Dr. Matthew Wilson</h4>
-                        <p>Associate Professor</p>
-                        <p>Director of Graduate Studies</p>
-                        <p>GIScience, Urban Geography, Critical Data Studies</p>
-                    </div>
-                </div>
-                
-                
-
+            <section data-background-image='images/background.jpg' data-background-opacity="0.3">
+                <h3 class='title'>Spring Courses</h5>
             </section>
+
+
 
             <section>
+                <section data-background-image='images/background.jpg' data-background-opacity="0.3">
+                    <h3 class='title'>UK Core classes</h5>
+                </section>
                 <section align='left' data-background-image='images/background.jpg' data-background-opacity="0.3">
-                        <h5 class='title'>GEO 109</h5>
-                    </section>
-                    <section align='left' data-background-image='images/background.jpg' data-background-opacity="0.3">
-                        <h5 class='title'>GEO 122</h5>
-                    </section>
-                
+                    <h3>GEO 109: Digital Mapping</h3>
+                    <div class="two-column">
+                        <div class="flex-column flex-spread">
+
+
+                            <div>
+                                <span class="highlight">UK Core: Art & Creativity</span><br>
+                                <span class="highlight">Mapping & GIS Minor</span>
+                            </div>
+
+                            <div>
+                                Tuesday, Thursday<br>11–11:50 a.m.
+                            </div>
+
+                            <div class="flex-two-items">
+                                <div class="instructor"
+                                    style="background-image: url('https://geography.as.uky.edu/sites/default/files/styles/fwrd_directory_photo/public/pictures/Screenshot%202024-02-05%20at%209.23.13%E2%80%AFAM.jpg');">
+                                </div>
+                                <div class="instructor-text">
+                                    Matt Zook
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex-column flex-right">
+                            <img src="https://gis.uky.edu/images/geo-109.jpg" alt="" class="course-image">
+                        </div>
+                    </div>
+                </section>
+                <section align='left' data-background-image='images/background.jpg' data-background-opacity="0.3">
+                    <h5 class='title'>GEO 122</h5>
+                </section>
+
             </section>
-            
+
+
+
+
+
+
 
 
         </div>
